@@ -1,0 +1,610 @@
+[
+    {
+        "key": "group_6081b80df3cb6",
+        "title": "Section Settings",
+        "fields": [
+            {
+                "key": "field_60e2f837f1db8",
+                "label": "ID Секции",
+                "name": "section_id",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60e303dd3d718",
+                "label": "Цвет текста",
+                "name": "section_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_6081b9a08e680",
+                "label": "⚙️ Размер секции и отступы",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_6081b823e7e23",
+                "label": "Ширина контента",
+                "name": "content_width",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "max-width:",
+                "append": "px;",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_60dea564dbf26",
+                "label": "Верхний отступ",
+                "name": "padding_top_px",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "padding-top:",
+                "append": "px;",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_60dea5ccdbf27",
+                "label": "Нижний отступ",
+                "name": "padding_bottom_px",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "padding-top:",
+                "append": "px;",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_60de33972a8e1",
+                "label": "Высота секции",
+                "name": "section_height",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "auto": "По высоте содержимого",
+                    "fullscreen": "По высоте окна браузера",
+                    "proportions": "Относительно ширины окна",
+                    "fixed": "Фиксированная высота"
+                },
+                "default_value": "auto",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_60de346e2a8e2",
+                "label": "Высота в пикселях",
+                "name": "section_px",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60de33972a8e1",
+                            "operator": "==",
+                            "value": "fixed"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "min-height:",
+                "append": "px;",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_60de34d42a8e3",
+                "label": "Относительная высота",
+                "name": "section_vw",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60de33972a8e1",
+                            "operator": "==",
+                            "value": "proportions"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "25",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "min": 0,
+                "max": 150,
+                "step": "",
+                "prepend": "min-height:",
+                "append": "vw;"
+            },
+            {
+                "key": "field_6081b9c48e681",
+                "label": "⚙️ Фон секции",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_6082ba4c786d4",
+                "label": "Цвет фона",
+                "name": "background_color",
+                "type": "color_picker",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_60dae574feeb8",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "80",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_6082b8ec786d0",
+                "label": "Фоновое изображение",
+                "name": "background_image",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "uploader": "",
+                "acfe_thumbnail": 0,
+                "return_format": "url",
+                "preview_size": "thumbnail",
+                "min_width": "",
+                "min_height": "",
+                "min_size": "",
+                "max_width": "",
+                "max_height": "",
+                "max_size": "",
+                "mime_types": "",
+                "library": "all"
+            },
+            {
+                "key": "field_6082b919786d1",
+                "label": "Размер фона",
+                "name": "background_size",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "auto": "Auto",
+                    "cover": "Cover",
+                    "100% auto": "На всю ширину",
+                    "auto 100%": "На всю высоту",
+                    "100% 100%": "100%"
+                },
+                "default_value": false,
+                "allow_null": 1,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "placeholder": "",
+                "ajax": 0
+            },
+            {
+                "key": "field_6082b9b1786d2",
+                "label": "Расположение фона",
+                "name": "background_position",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "top left": "top left",
+                    "top center": "top center",
+                    "top right": "top right",
+                    "center left": "center left",
+                    "center": "center",
+                    "center right": "center right",
+                    "bottom left": "bottom left",
+                    "bottom center": "bottom center",
+                    "bottom right": "bottom right"
+                },
+                "default_value": false,
+                "allow_null": 1,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "placeholder": "",
+                "ajax": 0
+            },
+            {
+                "key": "field_6082ba17786d3",
+                "label": "Повторение фона",
+                "name": "background_repeat",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "no-repeat": "no-repeat",
+                    "repeat-x": "repeat-x",
+                    "repeat-y": "repeat-y",
+                    "repeat": "repeat"
+                },
+                "default_value": false,
+                "allow_null": 1,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "placeholder": "",
+                "ajax": 0
+            },
+            {
+                "key": "field_60d1ac7f5fa12",
+                "label": "Фиксация фона",
+                "name": "background_fix",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 0,
+                "ui_on_text": "",
+                "ui_off_text": ""
+            },
+            {
+                "key": "field_60daf1d7e9629",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<h3>Работа с цветовыми наложениями<\/h3>\r\nЕсли «Цветовое наложение 1» не выбрано — все остальные параметры игнорируются\r\nЕсли выбрано только 1-е цветовое наложение — на фон накладывается однотонная цветная подложка\r\nЕсли выбраны оба «Цветовые наложения 1 и 2» — на фон накладывается градиент",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60d1acb55fa13",
+                "label": "Цветовое наложение 1",
+                "name": "overlay_color",
+                "type": "color_picker",
+                "instructions": "Верх градиента",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_60d1ad915fa16",
+                "label": "Непрозрачность",
+                "name": "overlay_opacity",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "0.2",
+                "min": 0,
+                "max": 1,
+                "step": "0.01",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_60dae44efeeb6",
+                "label": "Цветовое наложение 2",
+                "name": "overlay_color_2",
+                "type": "color_picker",
+                "instructions": "Низ градиента",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": ""
+            },
+            {
+                "key": "field_60daf17afeeb9",
+                "label": "Непрозрачность 2",
+                "name": "overlay_opacity_2",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "0.2",
+                "min": 0,
+                "max": 1,
+                "step": "0.01",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_60d1ad455fa14",
+                "label": "Режим наложения",
+                "name": "overlay_mode",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "20",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "normal": "normal",
+                    "multiply": "multiply",
+                    "screen": "screen",
+                    "overlay": "overlay",
+                    "darken": "darken",
+                    "lighten": "lighten",
+                    "color-dodge": "color-dodge",
+                    "color-burn": "color-burn",
+                    "hard-light": "hard-light",
+                    "soft-light": "soft-light",
+                    "difference": "difference",
+                    "exclusion": "exclusion",
+                    "hue": "hue",
+                    "saturation": "saturation",
+                    "color": "color",
+                    "luminosity": "luminosity"
+                },
+                "default_value": "normal",
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_60daf998a8468",
+                "label": "Угол градиента",
+                "name": "overlay_angle",
+                "type": "range",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60dae44efeeb6",
+                            "operator": "!=empty"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 180,
+                "min": 0,
+                "max": 360,
+                "step": 1,
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_60dafafb80442",
+                "label": "⚙️ Дополнительные стили",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 0
+            },
+            {
+                "key": "field_6081b97d8e67f",
+                "label": "Атрибут Style секции",
+                "name": "section_style",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_6081b9df8e682",
+                "label": "-end-",
+                "name": "",
+                "type": "accordion",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "open": 0,
+                "multi_expand": 0,
+                "endpoint": 1
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/easy-section"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "left",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

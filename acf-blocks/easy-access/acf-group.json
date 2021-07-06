@@ -1,0 +1,137 @@
+[
+    {
+        "key": "group_60b881a0a73c0",
+        "title": "Блок #3. Easy Access",
+        "fields": [
+            {
+                "key": "field_60b881ba25d87",
+                "label": "Ключ",
+                "name": "key",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60b881ce25d88",
+                "label": "Значение",
+                "name": "value",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.33",
+                    "class": "need-random-value",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60b88734ff1ce",
+                "label": "Рандомайзер",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.33",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<button class=\"generate-random-js\" onclick=\"jQuery('.need-random-value input').attr( 'value', Math.floor( Math.random()*999999 ) );\">← Сгенерировать код<\/button>",
+                "new_lines": "",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60b881db25d89",
+                "label": "Контент",
+                "name": "easy_content",
+                "type": "wysiwyg",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "tabs": "all",
+                "toolbar": "full",
+                "media_upload": 1,
+                "delay": 0
+            },
+            {
+                "key": "field_60b881ef25d8a",
+                "label": "Файл загрузки",
+                "name": "easy_download",
+                "type": "file",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "66.66",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "url",
+                "library": "all",
+                "min_size": "",
+                "max_size": "",
+                "mime_types": ""
+            },
+            {
+                "key": "field_60b89bf1ae65d",
+                "label": "Текст кнопки",
+                "name": "easy_label",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "33.33",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Скачать",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/easy-access"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

@@ -1,0 +1,262 @@
+[
+    {
+        "key": "group_60b6092bc7c19",
+        "title": "Block #1. Morris Pie-Chart",
+        "fields": [
+            {
+                "key": "field_60b60c2b5958c",
+                "label": "Цветовая схема",
+                "name": "color_scheme",
+                "type": "select",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "35",
+                    "class": "",
+                    "id": ""
+                },
+                "choices": {
+                    "0": "Схема 1",
+                    "1": "Схема 2",
+                    "2": "Схема 3",
+                    "3": "Схема 4",
+                    "4": "Схема 5",
+                    "custom": "Задать вручную"
+                },
+                "default_value": 1,
+                "allow_null": 0,
+                "multiple": 0,
+                "ui": 0,
+                "return_format": "value",
+                "ajax": 0,
+                "placeholder": ""
+            },
+            {
+                "key": "field_60b60cf15958d",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60b60c2b5958c",
+                            "operator": "==",
+                            "value": "0"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "65",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<div style=\"display: flex; height: 64px;\">\r\n<div style=\"background: #F2C2C2; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #C4B9D1; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #A0BED9; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #F3DEDB; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #E8AAB3; flex-grow: 1;\"><\/div>\r\n<\/div>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60b60e569a2d1",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60b60c2b5958c",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "65",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<div style=\"display: flex; height: 64px;\">\r\n<div style=\"background: #F27999; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #6A378C; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #AB8EBF; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #F2D479; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #F2F2F2; flex-grow: 1;\"><\/div>\r\n<\/div>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60b60e949a2d2",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60b60c2b5958c",
+                            "operator": "==",
+                            "value": "2"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "65",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<div style=\"display: flex; height: 64px;\">\r\n<div style=\"background: #E1D6A7; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #B1B297; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #91918E; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #3C4A60; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #A3A4B5; flex-grow: 1;\"><\/div>\r\n<\/div>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60b60f0e9a2d4",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60b60c2b5958c",
+                            "operator": "==",
+                            "value": "3"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "65",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<div style=\"display: flex; height: 64px;\">\r\n<div style=\"background: #F7D3B5; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #FCAD56; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #DF8402; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #AB4E04; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #753802; flex-grow: 1;\"><\/div>\r\n<\/div>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60b60ee19a2d3",
+                "label": "",
+                "name": "",
+                "type": "message",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60b60c2b5958c",
+                            "operator": "==",
+                            "value": "4"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "65",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "<div style=\"display: flex; height: 64px;\">\r\n<div style=\"background: #CD6437; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #E67341; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #3C559B; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #324678; flex-grow: 1;\"><\/div>\r\n<div style=\"background: #28375F; flex-grow: 1;\"><\/div>\r\n<\/div>",
+                "new_lines": "wpautop",
+                "esc_html": 0
+            },
+            {
+                "key": "field_60b60b27338c0",
+                "label": "Круговая диаграмма",
+                "name": "piechart",
+                "type": "repeater",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "collapsed": "field_60b60b6a338c1",
+                "min": 0,
+                "max": 0,
+                "layout": "table",
+                "button_label": "",
+                "sub_fields": [
+                    {
+                        "key": "field_60b60b6a338c1",
+                        "label": "Подпись",
+                        "name": "label",
+                        "type": "text",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "35",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "placeholder": "",
+                        "prepend": "",
+                        "append": "",
+                        "maxlength": ""
+                    },
+                    {
+                        "key": "field_60b60b86338c2",
+                        "label": "Значение",
+                        "name": "value",
+                        "type": "range",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": 0,
+                        "wrapper": {
+                            "width": "65",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": "",
+                        "min": 0,
+                        "max": 100,
+                        "step": "",
+                        "prepend": "",
+                        "append": ""
+                    },
+                    {
+                        "key": "field_60b60bb3338c3",
+                        "label": "Цвет",
+                        "name": "color",
+                        "type": "color_picker",
+                        "instructions": "",
+                        "required": 0,
+                        "conditional_logic": [
+                            [
+                                {
+                                    "field": "field_60b60c2b5958c",
+                                    "operator": "==",
+                                    "value": "custom"
+                                }
+                            ]
+                        ],
+                        "wrapper": {
+                            "width": "20",
+                            "class": "",
+                            "id": ""
+                        },
+                        "default_value": ""
+                    }
+                ]
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "block",
+                    "operator": "==",
+                    "value": "acf\/morris-piechart"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    }
+]

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+.easy-access__wrapper {
+	--content-width: 1200px;
+	--font-main: Montserrat;
+	--size-text: 16px;
+	padding: 20px 0 40px 0;
+	margin: 0;
+}
+
+.easy-access__inner {
+	max-width: var(--content-width);
+	margin: 0 auto;
+	border: 1px solid #e6e6e6;
+	border-radius: 8px;
+	padding: 16px 20px 24px 20px;
+	font-family: var(--font-main);
+	font-size: var(--size-text);
+	position: relative;
+	line-height: 1.6;
+}
+
+.easy-access__label {
+	position: absolute;
+	top: -1px;
+	right: 20px;
+	background: #000;
+	color: #fff;
+	font-size: 13px;
+	border-radius: 0 0 3px 3px;
+	line-height: 1;
+	padding: 6px 11px;
+	text-decoration: none;
+}	
+
+.easy-access__download {
+	border-radius: 4px;
+	padding: 12px 24px;
+	background: #000;
+	color: #fff;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.easy-access__download:hover {
+	color: yellow;
+}

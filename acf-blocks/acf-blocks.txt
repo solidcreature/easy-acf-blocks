@@ -1,0 +1,57 @@
+#1. BLOCK STRUCTURE
+
+📂 {block-name}
+	📄 {block-name}.php    //Blocks Template (mandatory)
+	📄 {block-name}.css    //Blocks Styles (optional)
+	📄 {block-name}.js     //Blocks Scripts (optional)
+	📄 acf-group.json      //ACF Group JSON (optional)
+	
+Example:
+📂 hero
+	📄 acf-group.json
+	📄 hero.php
+	📄 hero.css
+
+	
+	
+#2. BLOCK PARAMS
+
+Put this code at the begining of your blocks template file. Be shure, you changed {block-name} and your {Block Title} according to the blocks content; Change other params to manage your blocks behavior. For more information read this doc: https://www.advancedcustomfields.com/resources/acf_register_block_type/. 
+
+
+<?php
+/*
+Block Type: gutenberg
+Block Title: {Block Title}
+Block Name: {block-name}
+Description:
+Category: formatting
+Icon:
+Keywords:
+Post Types:
+Mode: preview
+Align: 
+Align Text:
+Align Content:
+Block Assets:
+Supports Align: false
+Supports Align Text: false
+Supports Align Content: false
+Supports Mode: true
+Supports Multiple: true
+Supports JSX: false
+Source Author:
+Source:
+*/
+?>
+
+#3. VALID BLOCK NAMES
+The plugin is built on the certain files names and structure. Invalid {block-name} may cause PHP errors or plugin malfunction;
+Use not more the one dash in your blocks name. Do not use underscores and long dashes;
+
+Block names examples
+hero - VALID
+hero-banner - VALID
+hero_slider - INVALID
+mega-slider-2 - INVALID
+
